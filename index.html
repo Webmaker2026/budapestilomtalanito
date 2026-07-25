@@ -10,9 +10,6 @@
   <meta name="description" content="Gyors lomtalanítás és lakáskiürítés Budapesten és Pest megyében. Bútor, gép, sitt elszállítás – akár aznap, korrekt áron. Hívjon 0-24!">
 
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Archivo+Black&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" />
 
   <!-- Google tag (gtag.js) -->
@@ -29,7 +26,10 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="index.html">LOM<span>TALANÍTÁS</span></a>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">Lt</span>
+      <span class="logo-txt">LOMTALANÍTÓ</span>
+    </a>
 
     <nav class="nav" id="primaryNav">
       <a class="active" href="index.html">Főoldal</a>
@@ -37,12 +37,12 @@
       <a href="lakaskiurites.html">Lakáskiürítés</a>
       <a href="kontener-rendeles-helyett-olcson.html">Konténer helyett olcsón</a>
       <a href="kapcsolat.html">Kapcsolat</a>
-      <a class="nav-call" href="tel:+36304670489">📞 +36 30 467 0489</a>
+      <a class="nav-call" href="tel:+36304670489">+36 30 467 0489</a>
     </nav>
 
-    <a class="call-btn" href="tel:+36304670489">
-      <span class="call-btn-ico">📞</span>
-      <span class="call-btn-txt">+36 30 467 0489<small>0–24 · Hétvégén is</small></span>
+    <a class="call-stub" href="tel:+36304670489">
+      <span class="call-stub-label">Hívás most</span>
+      <span class="call-stub-num">+36 30 467 0489</span>
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása" aria-expanded="false">
@@ -53,118 +53,143 @@
 
 <main>
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ HERO — MÉRLEGJEGY ============ -->
   <section class="hero">
     <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="tag">0–24 · HÉTVÉGÉN ÉS ÜNNEPNAPOKON IS</span>
-        <h1>LOMTALANÍTÁS<br><mark>MÉG MA</mark>, KORREKT ÁRON</h1>
-        <p>Gyors lakáskiürítés és lomtalanítás Budapesten és Pest megyében – bútor, háztartási gép, sitt, pince, garázs vagy akár teljes ingatlan kiürítése. Rövid határidővel, teljes körű pakolással és elszállítással.</p>
 
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="tel:+36304670489">📞 Hívjon most: +36 30 467 0489</a>
-          <a class="btn btn-ghost" href="#kapcsolat">Ajánlatot kérek</a>
+      <div class="ticket ticket--hero">
+        <div class="ticket-head">
+          <span>Mérlegjegy</span>
+          <span>Tétel #2026-0725 · Budapest</span>
         </div>
 
-        <ul class="stat-row">
-          <li><strong>AZNAPI</strong>kiszállás</li>
-          <li><strong>PAKOLÁS</strong>+ elszállítás</li>
-          <li><strong>FIX ÁR</strong>rejtett költség nélkül</li>
-        </ul>
+        <h1>LOMTALANÍTÁS<br>MÉG MA</h1>
+        <p class="hero-sub">Gyors lakáskiürítés és lomtalanítás Budapesten és Pest megyében – bútor, háztartási gép, sitt, pince, garázs vagy akár teljes ingatlan kiürítése. Rövid határidővel, teljes körű pakolással és elszállítással.</p>
+
+        <div class="ticket-rule"></div>
+
+        <div class="ticket-fields">
+          <div><span>Kiszállás</span><b>Aznap</b></div>
+          <div><span>Munka</span><b>Pakolás + szállítás</b></div>
+          <div><span>Elérhetőség</span><b>0–24, hétvégén is</b></div>
+          <div><span>Árazás</span><b class="accent">Fix, rejtett költség nélkül</b></div>
+        </div>
+
+        <div class="ticket-rule"></div>
+
+        <div class="ticket-cta">
+          <a class="btn btn-accent" href="tel:+36304670489">Hívjon most: +36 30 467 0489</a>
+          <a class="btn btn-line" href="#kapcsolat">Ajánlatot kérek</a>
+        </div>
+
+        <div class="ticket-foot">0–24 · Hétvégén és ünnepnapokon is</div>
       </div>
 
       <div class="hero-media">
-        <img src="lomikep.webp" alt="Lomtalanítási szolgáltatás Budapesten" width="560" height="420" />
-        <span class="hero-badge">TAPASZTALT<br>CSAPAT</span>
+        <img src="lomikep.webp" alt="Lomtalanítási szolgáltatás Budapesten" width="520" height="400" />
       </div>
     </div>
   </section>
 
-  <!-- ============ WHY US ============ -->
+  <!-- ============ WHY US — TÉTELSOROK ============ -->
   <section class="why">
     <div class="container">
-      <h2>Miért válasszon minket?</h2>
+      <p class="section-eyebrow">Miért minket válasszon</p>
+      <h2>A szolgáltatás tételei</h2>
 
-      <div class="why-grid">
-        <div class="why-card card-yellow">
-          <span class="why-ico">🛠️</span>
-          <h3>Szakértelem</h3>
-          <p>Tapasztalt csapatunk gyorsan és hatékonyan végzi a lomtalanítást, figyelembe véve az ügyfelek igényeit.</p>
+      <div class="line-items">
+        <div class="line-item">
+          <span class="line-no">01</span>
+          <div>
+            <h3>Szakértelem</h3>
+            <p>Tapasztalt csapatunk gyorsan és hatékonyan végzi a lomtalanítást, figyelembe véve az ügyfelek igényeit.</p>
+          </div>
         </div>
 
-        <div class="why-card">
-          <span class="why-ico">🚚</span>
-          <h3>Mindig úton</h3>
-          <p>Kollégáink folyamatos mozgásban vannak, így a nap folyamán bármikor az adott címen tudnak lenni.</p>
+        <div class="line-item">
+          <span class="line-no">02</span>
+          <div>
+            <h3>Mindig úton</h3>
+            <p>Kollégáink folyamatos mozgásban vannak, így a nap folyamán bármikor az adott címen tudnak lenni.</p>
+          </div>
         </div>
 
-        <div class="why-card card-yellow">
-          <span class="why-ico">⚡</span>
-          <h3>Villámgyors</h3>
-          <p>Pillanatok alatt elvégezzük a lomtalanítást – nincs várakozás, nincs húzódó munka.</p>
+        <div class="line-item">
+          <span class="line-no">03</span>
+          <div>
+            <h3>Villámgyors</h3>
+            <p>Pillanatok alatt elvégezzük a lomtalanítást – nincs várakozás, nincs húzódó munka.</p>
+          </div>
         </div>
 
-        <div class="why-card">
-          <span class="why-ico">📦</span>
-          <h3>Kis mennyiség is</h3>
-          <p>Kisebb mennyiségű lomért is házhoz megyünk, méretezéstől függetlenül.</p>
+        <div class="line-item">
+          <span class="line-no">04</span>
+          <div>
+            <h3>Kis mennyiség is</h3>
+            <p>Kisebb mennyiségű lomért is házhoz megyünk, méretezéstől függetlenül.</p>
+          </div>
         </div>
 
-        <div class="why-card card-yellow">
-          <span class="why-ico">📅</span>
-          <h3>Non-stop</h3>
-          <p>Minket bármikor hívhat! Hétvégén és ünnepnapokon is dolgozunk.</p>
+        <div class="line-item">
+          <span class="line-no">05</span>
+          <div>
+            <h3>Non-stop</h3>
+            <p>Minket bármikor hívhat! Hétvégén és ünnepnapokon is dolgozunk.</p>
+          </div>
         </div>
 
-        <div class="why-card">
-          <span class="why-ico">💸</span>
-          <h3>Versenyképes árak</h3>
-          <p>Áraink átláthatóak. Nincs rejtett költség, mindig pontos árajánlatot adunk.</p>
+        <div class="line-item">
+          <span class="line-no">06</span>
+          <div>
+            <h3>Versenyképes árak</h3>
+            <p>Áraink átláthatóak. Nincs rejtett költség, mindig pontos árajánlatot adunk.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CTA STRIP ============ -->
+  <!-- ============ CTA — NAGY BLOKK ============ -->
   <section class="cta-strip">
-    <div class="container cta-box">
-      <h2>Azonnali lomtalanításra van szüksége?</h2>
-      <p>Hívjon minket most, és akár még ma megoldjuk!</p>
-      <a class="btn btn-lg btn-invert" href="tel:+36304670489">📞 Hívjon most: +36 30 467 0489</a>
-      <span class="cta-note">0–24 · Hétvégén és ünnepnapokon is</span>
+    <div class="container">
+      <p class="cta-eyebrow">Azonnali lomtalanításra van szüksége?</p>
+      <p class="cta-num">+36 30 467 0489</p>
+      <a class="btn btn-accent btn-lg" href="tel:+36304670489">Hívjon most</a>
+      <p class="cta-note">0–24 · Hétvégén és ünnepnapokon is</p>
     </div>
   </section>
 
-  <!-- ============ REVIEWS ============ -->
+  <!-- ============ REVIEWS — VISSZAIGAZOLÁSOK ============ -->
   <section class="reviews">
     <div class="container">
+      <p class="section-eyebrow">Ügyfél-visszaigazolások</p>
       <h2>Rólunk mondták</h2>
 
       <div class="carousel-wrap">
         <div class="carousel-track" id="testimonialTrack">
-          <blockquote class="review-card">
+          <blockquote class="review-slip">
             <p>„Nagyon pontosan érkeztek, pillanatok alatt végeztek a lomtalanítással. Ajánlom Őket mindenkinek!”</p>
-            <cite>Rólunk mondták</cite>
+            <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
 
-          <blockquote class="review-card">
+          <blockquote class="review-slip">
             <p>„Sürgősen el kellett tüntetnem az elromlott hűtőmet, mert megérkezett az új, a fiúk 1 órán belül megszabadítottak tőle, köszönöm a gyorsaságot mégegyszer!”</p>
-            <cite>Rólunk mondták</cite>
+            <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
 
-          <blockquote class="review-card">
+          <blockquote class="review-slip">
             <p>„Este telefonáltam, mert kiderült, hogy másnap délelőtt megérkezik az új ágyam. Reggel a megbeszélt időpontban pontosan megjelentek, és alig 10 perc alatt elvitték a régit. Gyorsak, profik és nagyon segítőkészek voltak. Csak ajánlani tudom őket!”</p>
-            <cite>Rólunk mondták</cite>
+            <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
 
-          <blockquote class="review-card">
+          <blockquote class="review-slip">
             <p>„Egy nap alatt kiürítették a teljes lakást, gyorsan, gördülékenyen és nagyon korrekt áron. Pontosan érkeztek, mindent elintéztek. Abszolút ajánlom őket, ha gyors megoldás kell!”</p>
-            <cite>Rólunk mondták</cite>
+            <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
 
-          <blockquote class="review-card">
+          <blockquote class="review-slip">
             <p>„Egy 90 nm-es lakás teljes bútorzatát és lomjait pár óra leforgása alatt kiürítették! Nagyon gyorsak és korrektek. Nyugodt szívvel ajánlom mindenkinek!”</p>
-            <cite>Rólunk mondták</cite>
+            <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
         </div>
 
@@ -177,40 +202,50 @@
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
+  <!-- ============ CONTACT — ÜGYFÉL ADATLAP ============ -->
   <section class="contact" id="kapcsolat">
     <div class="container contact-grid">
 
-      <div class="contact-info">
-        <h2>Kapcsolat</h2>
-
-        <div class="contact-line">
-          <span class="contact-ico">✉️</span>
-          <div>
-            <small>Kérjen ajánlatot e-mailben</small>
-            <a href="mailto:lomtalanitasbudapest1@gmail.com">lomtalanitasbudapest1@gmail.com</a>
-          </div>
+      <div class="ticket ticket--contact">
+        <div class="ticket-head">
+          <span>Ügyfél adatlap</span>
+          <span>Kapcsolat</span>
         </div>
 
         <div class="contact-line">
-          <span class="contact-ico">📞</span>
-          <div>
-            <small>Hívjon, és azonnal kapcsoljuk kollégánkat</small>
-            <a href="tel:+36304670489">+36 30 467 0489</a>
-          </div>
+          <span class="contact-k">E-mail</span>
+          <a href="mailto:lomtalanitasbudapest1@gmail.com">lomtalanitasbudapest1@gmail.com</a>
+        </div>
+        <div class="ticket-rule"></div>
+        <div class="contact-line">
+          <span class="contact-k">Telefon</span>
+          <a href="tel:+36304670489">+36 30 467 0489</a>
+        </div>
+        <div class="ticket-rule"></div>
+        <div class="contact-line">
+          <span class="contact-k">Terület</span>
+          <span>Budapest, Pest megye</span>
+        </div>
+        <div class="ticket-rule"></div>
+        <div class="contact-line">
+          <span class="contact-k">Ügyelet</span>
+          <span>0–24, hétvégén is</span>
         </div>
       </div>
 
-      <form action="sendmail.php" class="contact-form" method="post">
+      <form action="sendmail.php" class="ticket ticket--form" method="post">
         <input name="form-type" type="hidden" value="contact" />
-        <h2>Írjon nekünk</h2>
+        <div class="ticket-head">
+          <span>Ajánlatkérő lap</span>
+          <span>Írjon nekünk</span>
+        </div>
 
-        <label><input name="name" placeholder="Név" required type="text" /></label>
-        <label><input name="phone" placeholder="Telefonszám" required type="text" /></label>
-        <label><input name="email" placeholder="E-mail cím" required type="email" /></label>
-        <label><textarea name="message" placeholder="Üzenet" required></textarea></label>
+        <label>Név<input name="name" placeholder="Kovács János" required type="text" /></label>
+        <label>Telefonszám<input name="phone" placeholder="+36 30 000 0000" required type="text" /></label>
+        <label>E-mail cím<input name="email" placeholder="nev@email.hu" required type="email" /></label>
+        <label>Üzenet<textarea name="message" placeholder="Mit szeretne elszállíttatni?" required></textarea></label>
 
-        <button class="btn btn-primary" type="submit">Elküldöm</button>
+        <button class="btn btn-accent" type="submit">Elküldöm</button>
       </form>
     </div>
   </section>
@@ -219,6 +254,7 @@
   <div class="overlay" id="success">
     <div class="popup">
       <a class="close" href="#">&times;</a>
+      <p class="section-eyebrow">Visszaigazolás</p>
       <h2>Köszönjük üzenetét</h2>
       <p>Az üzenetet sikeresen elküldte, perceken belül válaszolunk!</p>
     </div>
@@ -228,18 +264,21 @@
 
 <footer>
   <div class="container footer-inner">
-    <div class="footer-brand">LOM<span>TALANÍTÁS</span></div>
+    <div class="footer-brand">
+      <span class="logo-mark">Lt</span>
+      <span>LOMTALANÍTÓ</span>
+    </div>
 
     <ul class="footer-contact">
-      <li><a href="mailto:lomtalanitasbudapest1@gmail.com">✉️ lomtalanitasbudapest1@gmail.com</a></li>
-      <li><a href="tel:+36304670489">📞 +36 30 467 0489</a></li>
+      <li><a href="mailto:lomtalanitasbudapest1@gmail.com">lomtalanitasbudapest1@gmail.com</a></li>
+      <li><a href="tel:+36304670489">+36 30 467 0489</a></li>
     </ul>
 
     <div class="copyright">www.budapestilomtalanito.hu &copy; <span id="copyYear"></span></div>
   </div>
 </footer>
 
-<a class="mobile-call-bar" href="tel:+36304670489">📞 Hívjon most: +36 30 467 0489</a>
+<a class="mobile-call-bar" href="tel:+36304670489">Hívjon most: +36 30 467 0489</a>
 
 <script src="main.js"></script>
 </body>
