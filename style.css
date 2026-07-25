@@ -64,11 +64,12 @@ p{ margin:0 0 14px; color:var(--muted); }
 .eyebrow-light{ color:var(--accent-1); }
 
 /* ---------- scroll reveal ---------- */
-.reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s ease, transform .8s ease; }
-.reveal.is-visible{ opacity:1; transform:none; }
-@media (prefers-reduced-motion: reduce){
-  .reveal{ opacity:1; transform:none; transition:none; }
-}
+/* .reveal is visible by default - main.js opts the page into the
+   hide-then-fade-in behaviour only once it confirms the scroll
+   observer is wired up, so a JS failure can never hide content. */
+.reveal{ transition:opacity .8s ease, transform .8s ease; }
+html.reveal-ready .reveal{ opacity:0; transform:translateY(26px); }
+html.reveal-ready .reveal.is-visible{ opacity:1; transform:none; }
 
 /* ---------- buttons ---------- */
 .btn{
