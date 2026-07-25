@@ -12,7 +12,7 @@
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" />
 
   <!-- Google tag (gtag.js) -->
@@ -36,10 +36,14 @@
       <a href="olcso-budapesti-lomtalanitas.html">Lomtalanítás</a>
       <a href="lakaskiurites.html">Lakáskiürítés</a>
       <a href="kontener-rendeles-helyett-olcson.html">Konténer helyett olcsón</a>
+      <a href="#gyik">GYIK</a>
       <a href="kapcsolat.html">Kapcsolat</a>
     </nav>
 
-    <a class="header-call" href="tel:+36304670489">+36 30 467 0489</a>
+    <a class="btn-arrow btn-arrow--sm" href="tel:+36304670489">
+      <span>+36 30 467 0489</span>
+      <span class="arrow-circle">→</span>
+    </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása" aria-expanded="false">
       <span></span>
@@ -52,81 +56,89 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-grid">
+    <div class="container">
+      <span class="eyebrow reveal">Budapest &amp; Pest megye · 0–24</span>
 
-      <div class="hero-copy reveal">
-        <span class="eyebrow">0–24 · hétvégén és ünnepnapokon is</span>
-        <h1>Térjen vissza<br>a <em>rendezett otthonba</em></h1>
-        <p>Gyors lakáskiürítés és lomtalanítás Budapesten és Pest megyében – bútor, háztartási gép, sitt, pince, garázs vagy akár teljes ingatlan kiürítése. Rövid határidővel, teljes körű pakolással.</p>
+      <div class="hero-head reveal">
+        <h1>Rendet<br>teszünk<span class="accent-dot">.</span></h1>
+        <p class="hero-sub">Lomtalanítás és lakáskiürítés Budapesten és Pest megyében – bútor, háztartási gép, sitt, pince, garázs vagy akár teljes ingatlan kiürítése. Rövid határidővel, teljes körű pakolással.</p>
+      </div>
 
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="tel:+36304670489">Hívjon most: +36 30 467 0489</a>
-          <a class="btn btn-ghost" href="#kapcsolat">Ajánlatot kérek</a>
-        </div>
-
-        <div class="hero-stats">
-          <div><strong>Aznap</strong><span>kiszállás</span></div>
-          <div><strong>Fix ár</strong><span>rejtett költség nélkül</span></div>
-          <div><strong>0–24</strong><span>mindig hívható</span></div>
-        </div>
+      <div class="hero-row reveal">
+        <a class="btn-arrow is-solid" href="tel:+36304670489">
+          <span>Hívjon most: +36 30 467 0489</span>
+          <span class="arrow-circle">→</span>
+        </a>
+        <a class="btn-arrow" href="#kapcsolat">
+          <span>Ajánlatot kérek</span>
+          <span class="arrow-circle">→</span>
+        </a>
       </div>
 
       <div class="hero-visual reveal" id="heroVisual">
-        <img src="lomikep.webp" alt="Lomtalanítási szolgáltatás Budapesten" width="560" height="440" />
+        <img src="lomikep.webp" alt="Lomtalanítási szolgáltatás Budapesten" width="1100" height="500" />
       </div>
     </div>
-
-    <div class="scroll-cue" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- ============ WHY US ============ -->
-  <section class="why">
-    <div class="container why-grid">
-      <div class="why-head reveal">
-        <span class="eyebrow">Miért minket válasszon</span>
-        <h2>Nem csak elszállítjuk —<br>gondját visszük.</h2>
-        <p>Tíz éve dolgozunk Budapesten és környékén. Nem türelmetlenkedünk a nehéz darabokkal, és nem tűnünk el az árajánlat után.</p>
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span>0–24 szolgálat</span>
+        <span>Aznapi kiszállás</span>
+        <span>Fix ár, rejtett költség nélkül</span>
+        <span>Teljes körű pakolás</span>
+        <span>Budapest &amp; Pest megye</span>
+      </div>
+      <div class="ticker-group">
+        <span>0–24 szolgálat</span>
+        <span>Aznapi kiszállás</span>
+        <span>Fix ár, rejtett költség nélkül</span>
+        <span>Teljes körű pakolás</span>
+        <span>Budapest &amp; Pest megye</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Amit vállalunk</span>
+        <h2>Nem csak elszállítjuk —<br>gondját visszük</h2>
       </div>
 
-      <div class="why-list">
-        <div class="why-item reveal">
-          <span class="why-num">01</span>
-          <div>
-            <h3>Szakértelem</h3>
-            <p>Tapasztalt csapatunk gyorsan és hatékonyan végzi a lomtalanítást, figyelembe véve az ügyfelek igényeit.</p>
-          </div>
+      <div class="service-grid">
+        <div class="service-card reveal">
+          <span class="service-num">01</span>
+          <h3>Szakértelem</h3>
+          <p>Tapasztalt csapatunk gyorsan és hatékonyan végzi a lomtalanítást, figyelembe véve az ügyfelek igényeit.</p>
         </div>
-
-        <div class="why-item reveal">
-          <span class="why-num">02</span>
-          <div>
-            <h3>Mindig úton</h3>
-            <p>Kollégáink folyamatos mozgásban vannak, így a nap folyamán bármikor az adott címen tudnak lenni.</p>
-          </div>
+        <div class="service-card reveal">
+          <span class="service-num">02</span>
+          <h3>Mindig úton</h3>
+          <p>Kollégáink folyamatos mozgásban vannak, így a nap folyamán bármikor az adott címen tudnak lenni.</p>
         </div>
-
-        <div class="why-item reveal">
-          <span class="why-num">03</span>
-          <div>
-            <h3>Villámgyors</h3>
-            <p>Pillanatok alatt elvégezzük a lomtalanítást – nincs várakozás, nincs húzódó munka.</p>
-          </div>
+        <div class="service-card reveal">
+          <span class="service-num">03</span>
+          <h3>Villámgyors</h3>
+          <p>Pillanatok alatt elvégezzük a lomtalanítást – nincs várakozás, nincs húzódó munka.</p>
         </div>
-
-        <div class="why-item reveal">
-          <span class="why-num">04</span>
-          <div>
-            <h3>Non-stop</h3>
-            <p>Minket bármikor hívhat! Hétvégén és ünnepnapokon is dolgozunk.</p>
-          </div>
+        <div class="service-card reveal">
+          <span class="service-num">04</span>
+          <h3>Kis mennyiség is</h3>
+          <p>Kisebb mennyiségű lomért is házhoz megyünk, méretezéstől függetlenül.</p>
         </div>
-
-        <div class="why-item reveal">
-          <span class="why-num">05</span>
-          <div>
-            <h3>Versenyképes árak</h3>
-            <p>Áraink átláthatóak. Nincs rejtett költség, mindig pontos árajánlatot adunk.</p>
-          </div>
+        <div class="service-card reveal">
+          <span class="service-num">05</span>
+          <h3>Non-stop</h3>
+          <p>Minket bármikor hívhat! Hétvégén és ünnepnapokon is dolgozunk.</p>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">06</span>
+          <h3>Versenyképes árak</h3>
+          <p>Áraink átláthatóak. Nincs rejtett költség, mindig pontos árajánlatot adunk.</p>
         </div>
       </div>
     </div>
@@ -138,7 +150,10 @@
     <div class="container reveal">
       <span class="eyebrow eyebrow-light">Azonnali lomtalanításra van szüksége?</span>
       <h2>Hívjon minket most,<br>és akár még ma megoldjuk.</h2>
-      <a class="btn btn-primary btn-lg" href="tel:+36304670489">Hívjon most: +36 30 467 0489</a>
+      <a class="btn-arrow is-solid btn-arrow--lg" href="tel:+36304670489">
+        <span>+36 30 467 0489</span>
+        <span class="arrow-circle">→</span>
+      </a>
     </div>
   </section>
 
@@ -147,7 +162,7 @@
     <div class="container">
       <span class="eyebrow reveal">Rólunk mondták</span>
 
-      <div class="quote-stage reveal" id="quoteStage">
+      <div class="quote-stage reveal">
         <div class="quote-mark" aria-hidden="true">”</div>
 
         <div class="quote-track" id="testimonialTrack">
@@ -155,22 +170,18 @@
             <p>Nagyon pontosan érkeztek, pillanatok alatt végeztek a lomtalanítással. Ajánlom Őket mindenkinek!</p>
             <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
-
           <blockquote class="quote-slide">
             <p>Sürgősen el kellett tüntetnem az elromlott hűtőmet, mert megérkezett az új, a fiúk 1 órán belül megszabadítottak tőle, köszönöm a gyorsaságot mégegyszer!</p>
             <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
-
           <blockquote class="quote-slide">
             <p>Este telefonáltam, mert kiderült, hogy másnap délelőtt megérkezik az új ágyam. Reggel a megbeszélt időpontban pontosan megjelentek, és alig 10 perc alatt elvitték a régit. Csak ajánlani tudom őket!</p>
             <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
-
           <blockquote class="quote-slide">
             <p>Egy nap alatt kiürítették a teljes lakást, gyorsan, gördülékenyen és nagyon korrekt áron. Abszolút ajánlom őket, ha gyors megoldás kell!</p>
             <cite>Visszaigazolt megrendelés</cite>
           </blockquote>
-
           <blockquote class="quote-slide">
             <p>Egy 90 nm-es lakás teljes bútorzatát és lomjait pár óra leforgása alatt kiürítették! Nagyon gyorsak és korrektek. Nyugodt szívvel ajánlom mindenkinek!</p>
             <cite>Visszaigazolt megrendelés</cite>
@@ -178,10 +189,44 @@
         </div>
 
         <div class="quote-controls">
-          <button type="button" id="testimonialPrev" aria-label="Előző vélemény">←</button>
+          <button type="button" class="quote-arrow" id="testimonialPrev" aria-label="Előző vélemény">←</button>
           <div class="quote-dots" id="testimonialDots"></div>
-          <button type="button" id="testimonialNext" aria-label="Következő vélemény">→</button>
+          <button type="button" class="quote-arrow" id="testimonialNext" aria-label="Következő vélemény">→</button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="gyik">
+    <div class="container faq-grid">
+      <div class="section-head reveal">
+        <span class="eyebrow">GYIK</span>
+        <h2>Amit gyakran<br>kérdeznek</h2>
+        <p>Nem találja a választ? Hívjon telefonon, percek alatt válaszolunk.</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item" open>
+          <summary>Mennyi idő alatt érnek ki hozzám?</summary>
+          <p>A legtöbb esetben aznap kiszállunk – hívjon, és megmondjuk, aznap mikor tudunk odaérni.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Milyen területen vállalnak munkát?</summary>
+          <p>Budapesten és Pest megye teljes területén dolgozunk, a nap bármely szakában.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Hogyan alakul ki a végső ár?</summary>
+          <p>Telefonos egyeztetés után fix árat adunk – nincs utólagos felár vagy rejtett költség.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Hétvégén és ünnepnapokon is hívhatom Önöket?</summary>
+          <p>Igen, 0–24-ben, hétvégén és ünnepnapokon is elérhetőek vagyunk.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kis mennyiségű lomért is kimennek?</summary>
+          <p>Igen, mennyiségtől függetlenül vállaljuk a kiszállást és az elszállítást.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -217,7 +262,10 @@
         <label>E-mail cím<input name="email" placeholder="nev@email.hu" required type="email" /></label>
         <label>Üzenet<textarea name="message" placeholder="Mit szeretne elszállíttatni?" required></textarea></label>
 
-        <button class="btn btn-primary" type="submit">Elküldöm</button>
+        <button class="btn-arrow is-solid" type="submit">
+          <span>Elküldöm</span>
+          <span class="arrow-circle">→</span>
+        </button>
       </form>
     </div>
   </section>
@@ -225,14 +273,28 @@
 </main>
 
 <footer>
-  <div class="container footer-inner">
-    <div class="footer-brand">Lomtalanító<span>.</span></div>
+  <div class="container footer-grid">
+    <div class="footer-brand-col">
+      <div class="footer-brand">Lomtalanító<span>.</span></div>
+      <p>Lomtalanítás és lakáskiürítés Budapesten és Pest megyében, 0–24.</p>
+    </div>
 
-    <ul class="footer-contact">
-      <li><a href="mailto:lomtalanitasbudapest1@gmail.com">lomtalanitasbudapest1@gmail.com</a></li>
-      <li><a href="tel:+36304670489">+36 30 467 0489</a></li>
-    </ul>
+    <div class="footer-col">
+      <span class="footer-col-title">Oldal</span>
+      <a href="index.html">Főoldal</a>
+      <a href="olcso-budapesti-lomtalanitas.html">Lomtalanítás</a>
+      <a href="lakaskiurites.html">Lakáskiürítés</a>
+      <a href="#gyik">GYIK</a>
+    </div>
 
+    <div class="footer-col">
+      <span class="footer-col-title">Kapcsolat</span>
+      <a href="mailto:lomtalanitasbudapest1@gmail.com">lomtalanitasbudapest1@gmail.com</a>
+      <a href="tel:+36304670489">+36 30 467 0489</a>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="copyright">www.budapestilomtalanito.hu &copy; <span id="copyYear"></span></div>
   </div>
 </footer>
